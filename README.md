@@ -1,12 +1,18 @@
 # near_guide
 
 Оновлюємо пакети
+
+Заходимо в root користувача
+```
+sudo su
+```
+
 ```
 sudo apt update && sudo apt upgrade -y
 
 ```
 
-Встановлюємо інструменти розробника, Node.js, npm та інші необхідні пакети
+## Встановлення node
 ```
 sudo apt install -y git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python docker.io protobuf-compiler libssl-dev pkg-config llvm cargo
 
@@ -69,3 +75,69 @@ source ~/.cargo/env
 ```
 <img width="576" alt="Знімок екрана 2022-07-30 о 16 36 54" src="https://user-images.githubusercontent.com/102728347/181917044-1449dbb5-49a1-4aa7-bb56-0b85c096f3dc.png">
 
+
+
+Встановлюємо репозиторій
+```
+git clone https://github.com/near/nearcore
+cd nearcore
+git fetch
+git checkout c1b047b8187accbf6bd16539feb7bb60185bdc38
+
+```
+
+Збираємо бінарні файли
+```
+cargo build -p neard --release --features shardnet
+
+```
+<img width="550" alt="Знімок екрана 2022-07-30 о 17 18 32" src="https://user-images.githubusercontent.com/102728347/181918497-a957bb7a-47e8-4e33-8ffa-f8441a65ad2d.png">
+
+Ініціалізуємо ноду та завантажуємо генезис файл
+```
+./target/release/neard --home ~/.near init --chain-id shardnet --download-genesis
+
+```
+
+Завантажуємо файл конфігурацій
+```
+rm ~/.near/config.json
+wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
+
+```
+Створюємо сервісник
+```        
+echo "[Unit]
+Description=NEARd Daemon Service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/.near
+ExecStart=/root/nearcore/target/release/neard run
+Restart=on-failure
+RestartSec=30
+KillSignal=SIGINT
+TimeoutStopSec=45
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target"  | tee -a /etc/systemd/system/neard.service
+
+```
+
+Запускаємо сервісник
+```
+sudo systemctl daemon-reload
+sudo systemctl enable neard
+sudo systemctl restart neard
+
+```
+
+Команда для провірики логів
+```
+journalctl -u neard -f -o cat
+
+```
+## Cтворення гамнця
+Переходимо по силці (create_wallet)[https://wallet.shardnet.near.org/]
