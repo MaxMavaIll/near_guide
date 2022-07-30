@@ -60,9 +60,7 @@ export PATH="$USER_BASE_BIN:$PATH"
 ```
 sudo apt install curl build-essential gcc make -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-Вибираємо -> 1
-```
+# Вибираємо -> 1) Proceed with installation (default)
 source ~/.profile
 source ~/.cargo/env
 
