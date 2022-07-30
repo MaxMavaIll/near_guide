@@ -31,8 +31,7 @@ PATH="$PATH"
 node -v && npm -v
 
 ```
-
-![image_2022-07-18_18-18-09](https://user-images.githubusercontent.com/102728347/181916218-6c0ac491-1f2b-4d79-bf56-f4bd3e7260b0.png)
+<img width="225" alt="Знімок екрана 2022-07-30 о 16 18 48" src="https://user-images.githubusercontent.com/102728347/181916319-705da541-48ac-4d09-bda7-d38980ddfdc6.png">
 
 Устанавливаем NEAR-CLI
 ```
