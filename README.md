@@ -1,6 +1,13 @@
 # near_guide
 
-Оновлюємо пакети
+* [Встановлення node]()
+* [Створення гаманця]()
+* [Активування node]()
+* [Cтворення валідатора]()
+
+
+
+## Встановлення node
 
 Заходимо в root користувача
 ```
@@ -12,7 +19,7 @@ sudo apt update && sudo apt upgrade -y
 
 ```
 
-## Встановлення node
+
 ```
 sudo apt install -y git binutils-dev libcurl4-openssl-dev zlib1g-dev libdw-dev libiberty-dev cmake gcc g++ python docker.io protobuf-compiler libssl-dev pkg-config llvm cargo
 
@@ -139,5 +146,18 @@ sudo systemctl restart neard
 journalctl -u neard -f -o cat
 
 ```
+<img width="1380" alt="Знімок екрана 2022-07-30 о 23 23 07" src="https://user-images.githubusercontent.com/102728347/181995063-5575e37f-109c-4f33-9db7-670d783d2ed7.png">
+
+
 ## Cтворення гамнця
 Переходимо по силці [create_wallet](https://wallet.shardnet.near.org/). Створюємо гаманець і зберігаємо сід фрази.
+
+## Активація node 
+
+Запускаємо команду
+```
+near login
+
+```
+
+## Створення валідатора
