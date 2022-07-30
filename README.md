@@ -28,17 +28,18 @@ PATH="$PATH"
 
 Перевіряємо версії
 ```
-node -v
+node -v && npm -v
+
 ```
-```
-npm -v
-```
+
+![image_2022-07-18_18-18-09](https://user-images.githubusercontent.com/102728347/181916218-6c0ac491-1f2b-4d79-bf56-f4bd3e7260b0.png)
 
 Устанавливаем NEAR-CLI
 ```
 sudo npm install -g near-cli
 
 ```
+<img width="532" alt="Знімок екрана 2022-07-30 о 16 21 56" src="https://user-images.githubusercontent.com/102728347/181916300-e026ef96-07f6-4a7c-8a5e-b8c4e7e31880.png">
 
 Налаштовуємо оточення. Поточний тест проходить у мережі shardnet. Вводимо назву мережі як змінну
 ```
@@ -46,6 +47,7 @@ export NEAR_ENV=shardnet
 echo 'export NEAR_ENV=shardnet' >> ~/.bashrc
 
 ```
+
 
 Встановлюємо та налаштовуємо Python pip
 ```
