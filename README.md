@@ -67,4 +67,5 @@ source ~/.profile
 source ~/.cargo/env
 
 ```
+<img width="576" alt="Знімок екрана 2022-07-30 о 16 36 54" src="https://user-images.githubusercontent.com/102728347/181917044-1449dbb5-49a1-4aa7-bb56-0b85c096f3dc.png">
 
