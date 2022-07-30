@@ -140,4 +140,4 @@ journalctl -u neard -f -o cat
 
 ```
 ## Cтворення гамнця
-Переходимо по силці create_wallet[https://wallet.shardnet.near.org/]
+Переходимо по силці [create_wallet](https://wallet.shardnet.near.org/). Створюємо гаманець і зберігаємо сід фрази.
