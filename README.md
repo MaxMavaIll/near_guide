@@ -1,6 +1,6 @@
 # near_guide
 
-* [Встановлення node]()
+* [Встановлення node](https://github.com/MaxMavaIll/near_guide/blob/main/README.md#%D0%B2%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-node)
 * [Створення гаманця]()
 * [Активування node]()
 * [Cтворення валідатора]()
