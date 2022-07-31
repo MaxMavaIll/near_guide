@@ -148,6 +148,11 @@ journalctl -u neard -f -o cat
 ```
 <img width="1380" alt="Знімок екрана 2022-07-30 о 23 23 07" src="https://user-images.githubusercontent.com/102728347/181995063-5575e37f-109c-4f33-9db7-670d783d2ed7.png">
 
+Провіряємо синхронізацію 
+```
+curl -s http://127.0.0.1:3030/status | jq .sync_info
+
+```
 
 ## Cтворення гамнця
 Переходимо по силці [create_wallet](https://wallet.shardnet.near.org/). Створюємо гаманець і зберігаємо сід фрази.
@@ -157,7 +162,10 @@ journalctl -u neard -f -o cat
 Запускаємо команду
 ```
 near login
-
+# Водимо адрес в браузер https://wallet.shardnet.near.org/login/****
 ```
+Далі коли ви пройдете ви отримаєте помилку 404 Not Fount.
+Після цього переходимо в термінал
+
 
 ## Створення валідатора
