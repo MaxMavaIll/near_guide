@@ -166,7 +166,7 @@ ACCOUNT_ID=<ACCOUNT_ID>
 ## Активація node 
 
 Поповинити собі на гаманець можна через discord. 
-В групі [Wallet_creation]()
+В групі [Wallet_creation](https://discord.com/channels/490367152054992913/1002302377770090636)
 
 
 ```
