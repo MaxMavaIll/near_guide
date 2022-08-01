@@ -162,12 +162,11 @@ curl -s http://127.0.0.1:3030/status | jq .sync_info
 ACCOUNT_ID=<ACCOUNT_ID>
 
 ```
-
-## Активація node 
-
 Поповинити собі на гаманець можна через discord. 
 В групі [Wallet_creation](https://discord.com/channels/490367152054992913/1002302377770090636)
 
+
+## Активація node 
 
 ```
 near login
@@ -189,13 +188,11 @@ nano /root/.near-credentials/shardnet/$ACCOUNT_ID
 Замінюємо moniker на свій нік
 
 ```
-MONIKER=<MONIKER>
+MONIKER=$MONIKER
 ```
 ```
-POOL=<MONIKER>.factory.shardnet.near
-```
-```
-ACCOUNT_ID=<MONIKER>.shardnet.near
+POOL=$MONIKER.factory.shardnet.near
+ACCOUNT_ID=$MONIKER.shardnet.near
 ```
 
 Зберігаємо змінні
