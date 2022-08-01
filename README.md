@@ -157,15 +157,80 @@ curl -s http://127.0.0.1:3030/status | jq .sync_info
 ## Cтворення гамнця
 Переходимо по силці [create_wallet](https://wallet.shardnet.near.org/). Створюємо гаманець і зберігаємо сід фрази.
 
+Водимо ім'я ACCOUNT_ID
+```
+ACCOUNT_ID=<ACCOUNT_ID>
+
+```
+
 ## Активація node 
 
-Запускаємо команду
+Поповинити собі на гаманець можна через discord. 
+В групі [Wallet_creation]()
+
+
 ```
 near login
 # Водимо адрес в браузер https://wallet.shardnet.near.org/login/****
 ```
 Далі коли ви пройдете ви отримаєте помилку 404 Not Fount.
-Після цього переходимо в термінал
+Після цього переходимо в термінал і водимо таку команду
+```
+near generate-key $ACCOUNT_ID
+# <ACCOUNT_ID> приклад rabs.shardnet.near.json
+```
 
+Далі нам потрібно скопіювати pub ключ
+```
+nano /root/.near-credentials/shardnet/$ACCOUNT_ID
 
+```
 ## Створення валідатора
+Замінюємо moniker на свій нік
+
+```
+MONIKER=<MONIKER>
+```
+```
+POOL=<MONIKER>.factory.shardnet.near
+```
+```
+ACCOUNT_ID=<MONIKER>.shardnet.near
+```
+
+Зберігаємо змінні
+```
+echo "export MONIKER="${MONIKER}"" >> $HOME/.bash_profile
+echo "export POOL="${POOL}"" >> $HOME/.bash_profile
+echo "export ACCOUNT_ID="${ACCOUNT_ID}"" >> $HOME/.bash_profile
+
+source $HOME/.bash_profile
+
+echo -e "\nmoniker > ${MONIKER}.\n"
+echo -e "\npool > ${POOL}.\n"
+echo -e "\naccount_id > ${ACCOUNT_ID}.\n"
+
+```
+Створюємо ключ валідатора
+```
+near generate-key $POOL
+
+```
+Робимо деякі зміни у створившимуся файлі 
+```
+sed -i 's/private_key/secret_key/' ~/.near-credentials/shardnet/$POOL.json
+
+```
+Копіюємо ключ
+```
+cp ~/.near-credentials/shardnet/$POOL.json ~/.near/validator_key.json
+
+```
+
+І перезапускаємо ноду
+```
+sudo systemctl daemon-reload
+sudo systemctl enable neard
+sudo systemctl restart neard
+
+```
