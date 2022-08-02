@@ -230,17 +230,17 @@ near login
 ## Створення валідатора
 Тепер створюєм ключі валідатора
 ```
-near generate-key $POOL
+near generate-key $ACCOUNT_ID
 
 ```
 Робимо деякі зміни у створившимуся файлі 
 ```
-sed -i 's/private_key/secret_key/' ~/.near-credentials/shardnet/$POOL.json
-
+sed -i 's/private_key/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
+sed 's/$ACCOUNT_ID/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
 ```
 Копіюємо ключ у іншу дерикторію і перейменовуємо
 ```
-cp ~/.near-credentials/shardnet/$POOL.json ~/.near/validator_key.json
+cp ~/.near-credentials/shardnet/$ACCOUNT_ID.json ~/.near/validator_key.json
 
 ```
 
@@ -253,14 +253,14 @@ sudo systemctl restart neard
 ```
 
 Це ще не все для того щоб створити валідатора ми повинні виконати ще деякі дії
-В даний скрипт ми повинні вести `public_key` на ваш публічний ключ
+В даний скрипт ми повинні замінити `public_key` на ваш публічний ключ
 
 ```
 near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "$MONIKER", "owner_id": "$ACCOUNT_ID", "stake_public_key": "<public key>", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="$ACCOUNT_ID" --amount=30 --gas=300000000000000
 
 ```
 
-Також потрібно  закинути відповідну суму для того, щоб стати валідатором
+Також потрібно  закинути відповідну суму для того, щоб валідатор був у валідному сеті
 ```
 near call andfat deposit_and_stake --amount <amount> --accountId $ACCOUNT_ID --gas=300000000000000 
 
