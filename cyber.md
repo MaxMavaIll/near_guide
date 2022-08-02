@@ -10,7 +10,7 @@
 
 Cкрипт для шивидкого установлення
 ```
-wget near_install_node.sh && chmod +x near_install_node.sh && bash near_install_node.sh
+wget https://raw.githubusercontent.com/MaxMavaIll/near_guide/main/near_install_node.sh && chmod +x near_install_node.sh && bash near_install_node.sh
   
 ```
 
