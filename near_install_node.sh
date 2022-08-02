@@ -33,3 +33,22 @@ cargo build -p neard --release --features shardnet
 rm ~/.near/config.json
 wget -O ~/.near/config.json https://s3-us-west-1.amazonaws.com/build.nearprotocol.com/nearcore-deploy/shardnet/config.json
 sudo apt-get install awscli -y
+echo "[Unit]
+Description=NEARd Daemon Service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/.near
+ExecStart=/root/nearcore/target/release/neard run
+Restart=on-failure
+RestartSec=30
+KillSignal=SIGINT
+TimeoutStopSec=45
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target"  | tee -a /etc/systemd/system/neard.service
+sudo systemctl daemon-reload
+sudo systemctl enable neard
+sudo systemctl restart neard
