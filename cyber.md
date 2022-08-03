@@ -67,9 +67,7 @@ near login
 Після цього переходимо в термінал і водимо ваш ACCOUNT_ID
 Це повинно виглядати так
 
-<img width="1180" alt="Знімок екрана 2022-08-01 о 18 52 01" src="https://user-images.githubusercontent.com/102728347/182189875-ee3312a1-a697-4ba9-8278-ed9db2a13bab.png">
-
-
+<img width="675" alt="Знімок екрана 2022-08-03 о 16 34 16" src="https://user-images.githubusercontent.com/102728347/182621268-373c1fc2-e39b-4666-bcf3-740d96ec8412.png">
 
 ## Створення валідатора
 Тепер створюєм ключі валідатора
@@ -80,7 +78,7 @@ near generate-key $ACCOUNT_ID
 Робимо деякі зміни у створившимуся файлі 
 ```
 sed -i 's/private_key/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
-sed 's/$ACCOUNT_ID/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
+sed -i s/$ACCOUNT_ID/$POOL/ ~/.near-credentials/shardnet/$ACCOUNT_ID.json
 ```
 Копіюємо ключ у іншу дерикторію і перейменовуємо
 ```
