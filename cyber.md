@@ -55,9 +55,10 @@ near login
 ```
 
 Підтвержуємо всі запити
-<img width="1384" alt="Знімок екрана 2022-08-01 о 18 44 39" src="https://user-images.githubusercontent.com/102728347/182188439-e282a7e7-89cb-4f57-a11a-ade45ce4e75f.png">
 
-<img width="1384" alt="Знімок екрана 2022-08-01 о 18 45 15" src="https://user-images.githubusercontent.com/102728347/182188450-5d4ce4c5-dcef-4288-bffb-6c8325a513d9.png">
+<img width="373" alt="Знімок екрана 2022-08-03 о 16 24 47" src="https://user-images.githubusercontent.com/102728347/182619621-13c7dc5c-ab56-4fde-b763-bafba72f302a.png">
+
+<img width="366" alt="Знімок екрана 2022-08-03 о 16 25 41" src="https://user-images.githubusercontent.com/102728347/182619431-3d40f82f-ff3d-4a97-b861-0c045c9afbf1.png">
 
 <img width="386" alt="Знімок екрана 2022-08-01 о 18 45 42" src="https://user-images.githubusercontent.com/102728347/182188462-a11fcb15-5c8c-4eb6-b19c-a0deed819320.png">
 
