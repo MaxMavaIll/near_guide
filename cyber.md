@@ -4,6 +4,21 @@
 [<img width="695" alt="Знімок екрана 2022-08-03 о 14 33 05" src="https://user-images.githubusercontent.com/102728347/182598105-4c3dd80a-2ef1-4db7-a46a-419dbdc0ccc6.png">](https://near.org/community/)
 
 
+## Cтворення гамнця
+Переходимо по силці [create_wallet](https://wallet.shardnet.near.org/) і створюємо гамонець.
+Обов'зково!!!
+Не забуть зберегти сід фрази.
+
+Замінюємо moniker на свій нік
+```
+MONIKER=<MONIKER>
+```
+```
+POOL=$MONIKER.factory.shardnet.near
+ACCOUNT_ID=$MONIKER.shardnet.near
+
+```
+
 ## Встановлення node
 
 Встановлюємо node через скрипт
@@ -20,8 +35,6 @@ journalctl -u neard -f -o cat
 ```
 Коли воно загрузиться ви побачите такі логи
 
-<img width="1388" alt="Знімок екрана 2022-08-01 о 18 30 52" src="https://user-images.githubusercontent.com/102728347/182185558-36e9aa54-006f-40f3-aeff-cc5dba7320e5.png">
-
 
 Провіряємо синхронізацію 
 ```
@@ -30,23 +43,9 @@ curl -s http://127.0.0.1:3030/status | jq .sync_info
 ```
 Якщо синхронізація показує false тоді можна переходити до наступного розділу
 
-<img width="553" alt="Знімок екрана 2022-08-01 о 18 34 27" src="https://user-images.githubusercontent.com/102728347/182186039-330f7703-d0a4-4151-93a1-91e99e845842.png">
+<img width="553" alt="Знімок екрана 2022-08-03 о 16 06 32" src="https://user-images.githubusercontent.com/102728347/182615247-d570fe14-b076-496a-ba6f-de621c6afb36.png">
 
 
-## Cтворення гамнця
-Переходимо по силці [create_wallet](https://wallet.shardnet.near.org/) і створюємо гамонець.
-Обов'зково!!!
-Не забуть зберегти сід фрази.
-
-Замінюємо moniker на свій нік
-```
-MONIKER=<MONIKER>
-```
-```
-POOL=$MONIKER.factory.shardnet.near
-ACCOUNT_ID=$MONIKER.shardnet.near
-
-```
 
 ## Активація node 
 
