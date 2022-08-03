@@ -236,7 +236,7 @@ near generate-key $ACCOUNT_ID
 Робимо деякі зміни у створившимуся файлі 
 ```
 sed -i 's/private_key/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
-sed 's/$ACCOUNT_ID/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
+sed -i s/$ACCOUNT_ID/$POOL/ ~/.near-credentials/shardnet/$ACCOUNT_ID.json
 ```
 Копіюємо ключ у іншу дерикторію і перейменовуємо
 ```
