@@ -79,6 +79,7 @@ near generate-key $ACCOUNT_ID
 ```
 sed -i 's/private_key/secret_key/' ~/.near-credentials/shardnet/$ACCOUNT_ID.json
 sed -i s/$ACCOUNT_ID/$POOL/ ~/.near-credentials/shardnet/$ACCOUNT_ID.json
+
 ```
 Копіюємо ключ у іншу дерикторію і перейменовуємо
 ```
@@ -99,11 +100,9 @@ sudo systemctl restart neard
 
 ```
 near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "$MONIKER", "owner_id": "$ACCOUNT_ID", "stake_public_key": "<public key>", "reward_fee_fraction": {"numerator": 5, "denominator": 100}, "code_hash":"DD428g9eqLL8fWUxv8QSpVFzyHi1Qd16P8ephYCTmMSZ"}' --accountId="$ACCOUNT_ID" --amount=30 --gas=300000000000000
-
 ```
 
 Також потрібно  закинути відповідну суму для того, щоб валідатор був у валідному сеті
 ```
 near call andfat deposit_and_stake --amount <amount> --accountId $ACCOUNT_ID --gas=300000000000000 
-
 ```
