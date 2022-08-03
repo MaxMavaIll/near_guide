@@ -56,7 +56,7 @@ near login
 
 Підтвержуємо всі запити
 
-<img width="373" alt="Знімок екрана 2022-08-03 о 16 24 47" src="https://user-images.githubusercontent.com/102728347/182619621-13c7dc5c-ab56-4fde-b763-bafba72f302a.png">
+<img width="366" alt="Знімок екрана 2022-08-03 о 16 25 41" src="https://user-images.githubusercontent.com/102728347/182619737-837e5ec9-327b-4663-ab14-f9b2b1ab2f46.png">
 
 <img width="366" alt="Знімок екрана 2022-08-03 о 16 25 41" src="https://user-images.githubusercontent.com/102728347/182619431-3d40f82f-ff3d-4a97-b861-0c045c9afbf1.png">
 
