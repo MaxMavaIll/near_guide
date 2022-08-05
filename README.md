@@ -203,7 +203,7 @@ ACCOUNT_ID=$MONIKER.shardnet.near
 
 ```
 
-## Активація node 
+## Створення валідатора
 
 ```
 near login
@@ -226,7 +226,6 @@ near login
 
 
 
-## Створення валідатора
 Тепер створюєм ключі валідатора
 ```
 near generate-key $ACCOUNT_ID
