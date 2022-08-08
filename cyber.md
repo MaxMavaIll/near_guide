@@ -34,6 +34,12 @@ checkuot=<new_version>
 wget https://raw.githubusercontent.com/MaxMavaIll/near_guide/main/near_install_node.sh && chmod +x near_install_node.sh && bash near_install_node.sh
   
 ```
+Update cli (ця команда може значобитися пізніше)
+```
+sudo npm install -g near-cli
+
+```
+
 
 Команда для провірики логів
 Тут також повинно показуватися що іде завантаження headers
