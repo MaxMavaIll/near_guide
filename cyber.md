@@ -149,3 +149,6 @@ crontab -e
 ```
 0 */2 * * * bash /root/ping.sh
 ```
+Щоб побачити logs цих команд потрібно вести
+```
+nano ~/log/all.log
