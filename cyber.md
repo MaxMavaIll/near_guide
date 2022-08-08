@@ -138,6 +138,7 @@ near view <staking_pool_id> get_account_unstaked_balance '{"account_id": "<accou
 ```
 wget -P ~/ https://raw.githubusercontent.com/MaxMavaIll/near_guide/main/ping.sh && chmod +x ~/ping.sh 
 mkdir -p $HOME/logs
+
 ```
 Втановлюємо crontab якщо він у вас не встановлений і відкриваємо редактор де будемо задавати зміни
 ```
