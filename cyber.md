@@ -108,7 +108,6 @@ near call andfat deposit_and_stake --amount <amount> --accountId $ACCOUNT_ID --g
 ```
 
 * Unstake and Unstake All.
-
   near call <staking_pool_id> unstake '{"amount": "<amount yoctoNEAR>"}' --accountId <accountId> --gas=300000000000000
 
   near call <staking_pool_id> unstake_all --accountId <accountId> --gas=300000000000000
