@@ -151,4 +151,4 @@ crontab -e
 ```
 Щоб побачити logs цих команд потрібно вести
 ```
-nano ~/log/all.log
+nano ~/logs/all.log
