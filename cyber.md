@@ -107,6 +107,7 @@ near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "$MONIK
 near call andfat deposit_and_stake --amount <amount> --accountId $ACCOUNT_ID --gas=300000000000000 
 ```
 
+Команди для різних операцій
 * Unstake and Unstake All
 ```
 near call <staking_pool_id> unstake '{"amount": "<amount yoctoNEAR>"}' --accountId <accountId> --gas=300000000000000
