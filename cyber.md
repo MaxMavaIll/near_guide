@@ -24,7 +24,7 @@ ACCOUNT_ID=$MONIKER.shardnet.near
 Встановлюємо node через скрипт
 
 Встановлюємо нову версію гілки 
-Дізнатися це можна перейшовши по цій силці [new_version](https://github.com/near/stakewars-iii/blob/main/commit.md)
+Дізнатися це можна перейшовши по цій силці [last_version](https://github.com/near/stakewars-iii/blob/main/commit.md)
 ```
 exempl 68bfa84ed1455f891032434d37ccad696e91e4f5
 checkuot=<new_version>
