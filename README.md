@@ -264,7 +264,7 @@ near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "$MONIK
 ```
 near call andfat deposit_and_stake --amount <amount> --accountId $ACCOUNT_ID --gas=300000000000000 
 ```
-#Створюємо пінг
+# Створюємо пінг
 Втановлюємо crontab якщо він у вас не встановлений і відкриваємо редактор де будемо задавати зміни
 ```
 apt install crontab
