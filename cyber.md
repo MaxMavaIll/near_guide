@@ -22,6 +22,14 @@ ACCOUNT_ID=$MONIKER.shardnet.near
 ## Встановлення node
 
 Встановлюємо node через скрипт
+
+Встановлюємо нову версію гілки 
+Дізнатися це можна перейшовши по цій силці [new_version](https://github.com/near/stakewars-iii/blob/main/commit.md)
+```
+exempl 68bfa84ed1455f891032434d37ccad696e91e4f5
+checkuot=<new_version>
+```
+
 ```
 wget https://raw.githubusercontent.com/MaxMavaIll/near_guide/main/near_install_node.sh && chmod +x near_install_node.sh && bash near_install_node.sh
   
