@@ -9,15 +9,7 @@
 Обязательно!!!
 Не забудь сохранить сед фразы.
 
-Заменяем moniker на свой ник
-```
-MONIKER=<MONIKER>
-```
-```
-POOL=$MONIKER.factory.shardnet.near
-ACCOUNT_ID=$MONIKER.shardnet.near
 
-```
 
 ## Установка node
 
@@ -84,6 +76,17 @@ near login
 <img width="675" alt="Знімок екрана 2022-08-03 о 16 34 16" src="https://user-images.githubusercontent.com/102728347/182621268-373c1fc2-e39b-4666-bcf3-740d96ec8412.png">
 
 ## Создание валидатора
+
+Заменяем moniker на свой ник
+```
+MONIKER=<MONIKER>
+```
+```
+POOL=$MONIKER.factory.shardnet.near
+ACCOUNT_ID=$MONIKER.shardnet.near
+
+```
+
 Теперь создаем ключи валидатора
 ```
 near generate-key $ACCOUNT_ID
