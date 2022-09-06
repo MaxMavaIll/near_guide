@@ -168,7 +168,7 @@ cd nearcore
 ```
 Вы должны увидеть как пошла загрузка и проценты обязательно должны увеличиваться
 
-<img width="1307" alt="Знімок екрана 2022-08-01 о 16 49 51" src="https://user-images.githubusercontent.com/102728347/182184400-d5277b2c-5949-4434-906c-5ee3638f55f5.png">
+![image](https://user-images.githubusercontent.com/102728347/188554540-0202598c-356b-4147-bcaf-6d1b83070d32.png)
 
 Теперь можно остановить Cntr+C и создаем сервисник
 ```        
