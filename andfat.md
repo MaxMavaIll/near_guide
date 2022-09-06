@@ -228,12 +228,6 @@ near login
 
 Подтверждаем все запросы
 
-<img width="360" alt="Знімок екрана 2022-08-03 о 16 24 59" src="https://user-images.githubusercontent.com/102728347/182619950-f869cc10-50d0-48e5-8fbc-deb6692769eb.png">
-
-<img width="366" alt="Знімок екрана 2022-08-03 о 16 25 41" src="https://user-images.githubusercontent.com/102728347/182619431-3d40f82f-ff3d-4a97-b861-0c045c9afbf1.png">
-
-<img width="386" alt="Знімок екрана 2022-08-01 о 18 45 42" src="https://user-images.githubusercontent.com/102728347/182188462-a11fcb15-5c8c-4eb6-b19c-a0deed819320.png">
-
 Далее когда вы пройдете вы получите ошибку 403 Not Fount.
 
 После этого переходим в терминал и водим ваш ACCOUNT_ID
