@@ -4,7 +4,7 @@
 [<img width="695" alt="Знімок екрана 2022-08-03 о 14 33 05" src="https://user-images.githubusercontent.com/102728347/182598105-4c3dd80a-2ef1-4db7-a46a-419dbdc0ccc6.png">](https://near.org/community/)
 
 * [Создание кошелька](https://github.com/MaxMavaIll/near_guide/blob/main/andfat.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D1%8C%D0%BA%D0%B0)
-* [Встановлення ноди через скрипт](https://github.com/MaxMavaIll/near_guide/blob/main/andfat.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-node)
+* [Встановлення ноди через скрипт](https://github.com/MaxMavaIll/near_guide/blob/main/andfat.md#%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC-node-%D1%87%D0%B5%D1%80%D0%B5%D0%B7-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82)
 * []()
 * []()
 * []()
