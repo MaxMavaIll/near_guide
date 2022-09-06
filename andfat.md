@@ -166,9 +166,6 @@ cd nearcore
 ./target/release/neard --home ~/.near run
 
 ```
-Вы должны увидеть как пошла загрузка и проценты обязательно должны увеличиваться
-
-![image](https://user-images.githubusercontent.com/102728347/188554540-0202598c-356b-4147-bcaf-6d1b83070d32.png)
 
 Теперь можно остановить Cntr+C и создаем сервисник
 ```        
@@ -217,7 +214,8 @@ curl -s http://127.0.0.1:3030/status | jq .sync_info
 ```
 Если синхронизация показывает false, тогда можно переходить к следующему разделу
 
-<img width="553" alt="Знімок екрана 2022-08-03 о 16 06 32" src="https://user-images.githubusercontent.com/102728347/182615247-d570fe14-b076-496a-ba6f-de621c6afb36.png">
+![image](https://user-images.githubusercontent.com/102728347/188554540-0202598c-356b-4147-bcaf-6d1b83070d32.png)
+
 
 
 
