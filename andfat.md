@@ -126,9 +126,10 @@ git clone https://github.com/near/nearcore
 cd nearcore
 git fetch
 #Обов'язково провіряємо чи це нова версія
-git checkout c1b047b8187accbf6bd16539feb7bb60185bdc38
+git checkout 1897d5144a7068e4c0d5764d8c9180563db2fe43
 
 ```
+Узнать это можно перейдя по этой ссылке [Последняя версия](https://github.com/near/stakewars-iii/blob/main/commit.md)
 
 Собираем бинарные файлы
 ```
