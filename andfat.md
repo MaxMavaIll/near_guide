@@ -233,7 +233,7 @@ near login
 После этого переходим в терминал и водим ваш ACCOUNT_ID
 Это должно выглядеть так
 
-<img width="675" alt="Знімок екрана 2022-08-03 о 16 34 16" src="https://user-images.githubusercontent.com/102728347/182621268-373c1fc2-e39b-4666-bcf3-740d96ec8412.png">
+<img width="1306" alt="image" src="https://user-images.githubusercontent.com/102728347/188556932-cc801fe3-8c07-42de-a3e7-b2dbc449ce2d.png">
 
 ## Создание валидатора
 
@@ -281,7 +281,7 @@ near call factory.shardnet.near create_staking_pool '{"staking_pool_id": "$MONIK
 ```
 near call $MONIKER deposit_and_stake --amount <amount> --accountId $ACCOUNT_ID --gas=300000000000000 
 ```
-Другие команды, которые могут понадобиться
+### Другие команды, которые могут понадобиться
 
 * Unstake and Unstake All
 ```
