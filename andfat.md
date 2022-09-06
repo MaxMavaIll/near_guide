@@ -12,7 +12,7 @@
 
 
 ## Создание кошелька
-Переходим по ссылке [create_wallet](https://wallet.shardnet.near.org/) и создаем кошелек.
+Переходим по ссылке [создать кошелек](https://wallet.shardnet.near.org/) и создаем кошелек.
 Обязательно!!!
 Не забудь сохранить сид фразы.
 
@@ -23,7 +23,7 @@
 ### Устанавливаем node через скрипт
 
 Устанавливаем новую версию ветви
-Узнать это можно перейдя по этой ссылке [last_version](https://github.com/near/stakewars-iii/blob/main/commit.md)
+Узнать это можно перейдя по этой ссылке [Последняя версия](https://github.com/near/stakewars-iii/blob/main/commit.md)
 ```
 exempl 68bfa84ed1455f891032434d37ccad696e91e4f5
 checkuot=<new_version>
