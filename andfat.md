@@ -80,7 +80,7 @@ PATH="$PATH"
 node -v && npm -v
 
 ```
-<img width="225" alt="Знімок екрана 2022-07-30 о 16 18 48" src="https://user-images.githubusercontent.com/102728347/181916319-705da541-48ac-4d09-bda7-d38980ddfdc6.png">
+<img width="263" alt="image" src="https://user-images.githubusercontent.com/102728347/188551467-fec8c261-917a-4fc0-9418-0aaabac2b4c3.png">
 
 Устанавливаем NEAR-CLI(также таким образом можно переустановить near-cli)
 ```
