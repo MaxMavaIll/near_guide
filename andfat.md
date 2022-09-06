@@ -21,7 +21,7 @@
 
 ## Установка node
 
-###Устанавливаем node через скрипт
+### Устанавливаем node через скрипт
 
 Устанавливаем новую версию ветви
 Узнать это можно перейдя по этой ссылке [last_version](https://github.com/near/stakewars-iii/blob/main/commit.md)
