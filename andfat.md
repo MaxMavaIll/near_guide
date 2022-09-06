@@ -136,7 +136,6 @@ git checkout 1897d5144a7068e4c0d5764d8c9180563db2fe43
 cargo build -p neard --release --features shardnet
 
 ```
-<img width="550" alt="Знімок екрана 2022-07-30 о 17 18 32" src="https://user-images.githubusercontent.com/102728347/181918497-a957bb7a-47e8-4e33-8ffa-f8441a65ad2d.png">
 
 Инициализируем ноду и загружаем генезис файл
 ```
