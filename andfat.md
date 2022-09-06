@@ -1,7 +1,8 @@
 
 # NEAR
 
-<img width="696" alt="Знімок екрана 2022-09-06 о 11 17 11" src="https://user-images.githubusercontent.com/102728347/188584517-a3be433b-244c-45b8-81b0-7ae2430c130a.png">
+<img width="690" alt="Знімок екрана 2022-09-06 о 11 22 10" src="https://user-images.githubusercontent.com/102728347/188584721-8d3251a2-3574-4f92-913f-a060b5a26755.png">
+
 
 
 * [Создание кошелька](https://github.com/MaxMavaIll/near_guide/blob/main/andfat.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BE%D1%88%D0%B5%D0%BB%D1%8C%D0%BA%D0%B0)
